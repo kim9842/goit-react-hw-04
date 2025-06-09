@@ -5,7 +5,7 @@
   font-size: 16px;
   font-weight: bold;
   color: #fff;
-  background-color: #36d7b7;
+  background-color: darkseagreen;
   border: none;
   border-radius: 8px;
   cursor: pointer;
@@ -14,7 +14,7 @@
 }
 
 .loadMoreButton:hover:not(:disabled) {
-  background-color: #2bb9a3;
+  background-color: darkseagreen;
   transform: scale(1.03);
 }
 
