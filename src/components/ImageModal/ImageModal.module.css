@@ -1,0 +1,84 @@
+/* Overlay вокруг модального окна */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.75);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Сама модалка */
+.modal {
+  position: relative;
+  background-color: #fff;
+  padding: 20px;
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Изображение */
+.image {
+  max-width: 100%;
+  max-height: 70vh;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+/* Контейнер для информации и кнопки */
+.infoOverlay {
+  margin-top: 16px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* Текстовая информация */
+.modalInfo {
+  font-size: 16px;
+  color: #333;
+}
+
+/* Кнопка закрытия */
+.closeBtn {
+  padding: 8px 16px;
+  background-color: #ff4d4f;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.closeBtn:hover {
+  background-color: #d9363e;
+}
+
+@media (max-width: 768px) {
+  .modal {
+    padding: 16px;
+  }
+
+  .infoOverlay {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .closeBtn {
+    align-self: flex-end;
+  }
+}
