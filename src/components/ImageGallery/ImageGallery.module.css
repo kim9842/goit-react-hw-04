@@ -1,4 +1,5 @@
 .gallery {
+  width: 100%;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
   gap: 16px;
@@ -13,18 +14,4 @@
 
 .galleryItem:hover {
   transform: scale(1.02);
-}
-
-@media (max-width: 768px) {
-  .gallery {
-    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
-    gap: 12px;
-  }
-}
-
-@media (max-width: 480px) {
-  .gallery {
-    grid-template-columns: 1fr;
-    gap: 10px;
-  }
 }
